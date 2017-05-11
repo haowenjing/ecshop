@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.one{
+			border:2px solid red;
+			padding: 10px 40px;
+			background: pink;
+			width: 300px;
+			border-radius: 25px;
+			box-shadow: 10px 10px 5px gray;
+		}
+		div
+{
+	border:15px solid transparent;
+	width:500px;
+	padding:10px 20px;
+}
+
+#round
+{
+	-webkit-border-image:url(1.png) 30 30 round; /* Safari 5 and older */
+	-o-border-image:url(1.png) 30 30 round; /* Opera */
+	border-image-source:url(1.png) 30 30 round;
+}
+
+#stretch
+{
+	-webkit-border-image:url(1.png) 30 30 stretch; /* Safari 5 and older */
+	-o-border-image:url(1.png) 30 30 stretch; /* Opera */
+	border-image:url(1.png) 30 30 stretch;
+	
+}
+	</style>
+</head>
+<body>
+<a href="01.php" target="_top">我的青春正好</a>
+<img src="1.jpg" alt="风环境" title="我们的青春如此美好" align="middle" width="100%" height="900px">
+<ol >
+	<li>hahha</li>
+	<li>xixi</li>
+	<li>heiehi</li>
+
+</ol>
+<hr>
+<dl>
+	<dt>支付方式</dt>
+	<dd>支付宝</dd>
+	<dd>微信</dd>
+	<dd>银行卡</dd>
+
+</dl>
+
+<div class="one">
+	border-radius 属性允许您为元素添加圆角边框
+</div>
+<p><b>注意: </b> Internet Explorer 不支持 border-image 属性。</p>
+<p> border-image 属性用于设置图片的边框。</p>
+
+<div id="round">这里，图像平铺（重复）来填充该区域。</div>
+<br>
+<div id="stretch">这里，图像被拉伸以填充该区域。</div>
+
+<p>这是我们使用的图片素材：</p>
+<img src="1.png" />
+
+</body>
+</html>
